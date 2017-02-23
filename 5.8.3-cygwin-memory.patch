@@ -1,0 +1,11 @@
+--- origsrc/kinfocenter-5.8.3/Modules/memory/memory.cpp	2016-11-01 07:09:10.000000000 -0500
++++ src/kinfocenter-5.8.3/Modules/memory/memory.cpp	2016-11-09 09:36:31.805133900 -0600
+@@ -286,7 +286,7 @@ void KCMMemory::updateMemoryGraphics() {
+ 
+ /* Include system-specific code */
+ 
+-#ifdef __linux__
++#if defined(__linux__) || defined(__CYGWIN__)
+ #include "memory_linux.cpp"
+ #elif defined(__APPLE__)
+ #include "memory_osx.cpp"

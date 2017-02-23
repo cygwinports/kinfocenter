@@ -1,0 +1,11 @@
+inherit kf5
+
+NAME="kinfocenter"
+VERSION=5.8.5
+RELEASE=1
+CATEGORY="KDE"
+SUMMARY="KDE system information"
+DESCRIPTION="KInfoCenter provides a centralized and convenient overview of your
+system and KDE Plasma desktop environment."
+
+PATCH_URI="5.8.3-cygwin-memory.patch"
